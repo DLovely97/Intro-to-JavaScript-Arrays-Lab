@@ -48,7 +48,7 @@ Exercise 4: Access an array element
 Complete Exercise 4 in the space below:
 */
 
-const favFood = [foods[1]];
+const favFood = foods[1];
 
 console.log('Exercise 4 result:', favFood);
 
@@ -61,7 +61,7 @@ Exercise 5: Insert an element between two others
 Complete Exercise 5 in the space below:
 */
 
-foods.splice(1, 1, 'pizza','tofu');
+foods.splice(2, 0, 'tofu');
 
 console.log('Exercise 5 result:', foods);
 
@@ -73,7 +73,7 @@ Exercise 6: Replace elements
 Complete Exercise 6 in the space below:
 */
 
-foods.splice(1, 1, 'sushi');
+foods.splice(1, 1, 'sushi', 'cupcake');
 
 console.log('Exercise 6 result:', foods);
 
@@ -108,7 +108,7 @@ Complete Exercise 8 in the space below:
 
 console.log(foods.indexOf('tofu'));
 
-const soyIdx = foods.slice(2, -1)
+const soyIdx = foods.indexOf('tofu');
 
 console.log('Exercise 8 result:', soyIdx);
 
@@ -147,9 +147,9 @@ Exercise 10: Check for an element
 Complete Exercise 10 in the space below:
 */
 
-console.log(foods.includes('yummy'));
 
-const hasSoup = []
+const hasSoup = foods.includes('soup');
+
 console.log('Exercise 10 result:', hasSoup);
 
 
@@ -236,7 +236,8 @@ const numArrays = [
 	[7, 81, 90,]
 ];
 
-const numList = [numArrays[3]]
+const numList = 
+numArrays[numArrays.length - 1];
 
 console.log('Exercise 13 result:', numList);
 
